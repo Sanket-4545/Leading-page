@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leading page</title>
+</head>
+
+<body>
+    <div id="main">
+         <!-- <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1974" 
+            alt=""> -->
+            <!-- <img src="IMG_20250827_155306_026-EDIT.jpg" alt=""> -->
+
+<div class="photo-box">
+    <img src="sanket1.jpg" class="photo">
+</div>
+
+
+
+           <h1 id="text-div">We're con tent creation team and we're goinghto make some cool stuff for your</h1>
+            <h1 id=""></h1>
+            <div id="scroll-div">
+                <h1>SANKET</h1>
+                <h1>SANKET</h1>
+                <h1>SANKET</h1>
+                <h1>SANKET</h1>
+            </div>
+            <div id="scroll-div2">
+                <h1>SANKET</h1>
+                <h1>SANKET</h1>
+                <h1>SANKET</h1>
+                <h1>SANKET</h1>
+            </div>
+            <div id="scroll-div3">
+                <h1>SANKET</h1>
+                <h1>SANKET</h1>
+                <h1>SANKET</h1>
+                <h1>SANKET</h1>
+            </div>
+    </div>
+    
+</body>
+<script>
+    const photo = document.querySelector('.photo');
+
+document.addEventListener('mousemove', (e) => {
+    const moveX = (e.clientX - window.innerWidth / 2) / 8;
+    const moveY = (e.clientY - window.innerHeight / 2) / 8;
+
+    photo.style.transform = `translate(${moveX}px, ${moveY}px)`;
+});
+
+document.addEventListener('mouseleave', () => {
+    photo.style.transform = `translate(0, 0)`;
+});
+
+</script>
+</html>
